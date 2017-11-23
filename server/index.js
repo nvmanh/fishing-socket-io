@@ -9,7 +9,8 @@ var port = process.env.PORT || 5000
 //   socketio.set("polling duration", 10)
 
 var ObjectID = mongojs.ObjectID;
-var db = mongojs(process.env.MONGO_URL || 'mongodb://nvmanh:manhduong1204@ds113636.mlab.com:13636/fishing');
+//var db = mongojs(process.env.MONGO_URL || 'mongodb://nvmanh:manhduong1204@ds113636.mlab.com:13636/fishing');
+var db = mongojs(process.env.MONGO_URL || 'mongodb://localhost:27017/fishing');
 var app = express();
 var server = http.Server(app);
 var websocket = socketio(server);

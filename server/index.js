@@ -1,8 +1,8 @@
 var express = require('express');
-var http = require('http')
+var http = require('http');
 var socketio = require('socket.io');
 var mongojs = require('mongojs');
-var port = process.env.PORT || 5000
+var port = process.env.PORT || 5000;
 
 // socketio.configure () ->
 //   socketio.set("transports", ["xhr-polling"])
